@@ -1,0 +1,166 @@
+/* Background */
+body{
+    text-align:center;
+    background: linear-gradient(135deg,#1d4350,#a43931);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+/* Game Board */
+.game{
+    height:60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5vmin;
+
+    padding:15px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Boxes */
+.box{
+    height:18vmin;
+    width:18vmin;
+    border-radius:15px;
+    border:none;
+    font-size:8vmin;
+    font-weight:bold;
+    cursor:pointer;
+
+    color:#ff0055;
+    background: linear-gradient(145deg,#fff9c4,#ffe082);
+
+    transition: all 0.25s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.box:hover{
+    transform: scale(1.08);
+    background: linear-gradient(145deg,#fff176,#ffd54f);
+}
+
+/* Buttons */
+button{
+    padding:12px 22px;
+    font-size:1.1rem;
+    color:white;
+    background: linear-gradient(45deg,#141e30,#243b55);
+    border-radius:12px;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.6);
+}
+
+.winner{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+
+    background: rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+
+    z-index:10;
+}
+
+.start{
+    height:50vmin;
+    width:50vmin;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1.2rem;
+
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+    border-radius:20px;
+    padding:20px;
+}
+
+/* Leaderboard */
+.leaderboard{
+    margin-top:15px;
+    padding:15px 25px;
+    border-radius:15px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.leaderboard h2{
+    margin-bottom:8px;
+}
+
+.leaderboard span{
+    font-weight:bold;
+    color:#ffd700;
+}
+
+/* Status colors */
+.wins{
+    background:green;
+    color:white;
+}
+
+.lose{
+    background:red;
+    color:white;
+}
+
+.leaderboard{
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    padding: 12px 18px;
+    border-radius: 12px;
+
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
+
+    color: white;
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.leaderboard h2{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.leaderboard p{
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+.leaderboard span{
+    color: gold;
+    font-weight: bold;
+}
+
+/* Hide class */
+.hide{
+    display:none;
+}
