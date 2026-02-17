@@ -126,7 +126,7 @@ const showWinner = (val) => {
     }
     else if(mode === "computer"){
         if(val === "O"){
-            document.getElementById("output").innerText= `Conratulations! You Won`;
+            document.getElementById("output").innerText= `Congratulations! You Won`;
         }
         else if(val === "X"){
             document.getElementById("output").innerText= `You lose - Better luck next time!`;
@@ -163,7 +163,7 @@ const checkDraw = () => {
         drawScore++;
         document.getElementById("drawScore").innerText = drawScore;
 
-        document.getElementById("output").innerText= `Draw! No winnner.`;
+        document.getElementById("output").innerText= `Draw! No winner.`;
         pl.innerText = "";
 
         resetbtn.classList.add("hide");
