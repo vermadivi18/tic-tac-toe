@@ -23,6 +23,7 @@ resetbtn.classList.add("hide");
 exitbtn.classList.add("hide");
 
 const exitGame = () => {
+    if(!confirm("Are you sure you want to exit?")) return;
     turnO = true;
     winner = false;
     cnt = 0;
